@@ -244,6 +244,7 @@ class HTTP:
         startTimestamp: int,
         endTimeStamp: int,
     ) -> Union[dict, str]:
+        print(f"api/papi-client/crm/cod/v2/title/{title}/platform/{platform}/gamer/{urllib.parse.quote(username)}/matches/{mode}/start/{startTimestamp}/end/{endTimeStamp}/details?limit={limit}")
         return await self.Send(
             Request(
                 "GET",
